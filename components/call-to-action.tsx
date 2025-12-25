@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 export default function StatsSection() {
     return (
-        <section>
+        <section id="contact">
             <div className="bg-muted py-12">
                 <div className="mx-auto max-w-5xl px-6">
                     <h2 className="text-foreground max-w-lg text-balance text-3xl font-semibold lg:text-4xl">

@@ -3,7 +3,7 @@ import { Shield, Users } from 'lucide-react'
 
 export default function WhyMirchi() {
     return (
-        <section className="bg-gray-50 py-16 md:py-32 dark:bg-transparent">
+        <section id="features" className="bg-gray-50 py-16 md:py-32 dark:bg-transparent">
             <div className="mx-auto max-w-5xl px-6">
                 <div className="text-center mb-12">
                     <h2 className="text-4xl md:text-5xl font-bold mb-4">Why Choose <span style={{ color: '#DB0917' }}>Mirchi35</span>?</h2>

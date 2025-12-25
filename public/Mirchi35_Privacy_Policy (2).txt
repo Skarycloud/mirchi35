@@ -1,0 +1,137 @@
+
+PRIVACY POLICY – MIRCHI35
+
+Effective Date: 10 January 2026
+Last Updated: 10 January 2026
+
+Entity Name: Mirchi35 Private Limited
+CIN: U47912KA2025PTC211865
+
+Mirchi35 Private Limited (“Mirchi35”, “we”, “our”, “us”) respects your privacy and is committed to protecting personal, transactional, vendor, and business partner data shared on the Mirchi35 platform.
+
+--------------------------------------------------
+1. SCOPE OF THIS POLICY
+--------------------------------------------------
+This Privacy Policy applies to:
+- Customers using the Mirchi35 platform
+- Vendors / merchants listed on Mirchi35
+- Business partners integrated with or supporting Mirchi35 services
+- All services, features, and transactions conducted within the Mirchi35 ecosystem
+
+This policy does not apply to external third-party websites or services not controlled by Mirchi35.
+
+--------------------------------------------------
+2. INFORMATION WE COLLECT
+--------------------------------------------------
+
+2.1 User Information
+- Name, mobile number, email address
+- Device and app information
+- Location data (only with user permission)
+- Platform usage data
+
+2.2 Transaction Information
+- Order details and transaction history
+- Payment mode (no card or bank credentials stored)
+- Order fulfillment status
+
+2.3 Vendor Service Data
+- Business and listing details
+- Pricing, availability, and performance metrics
+- Ratings, feedback, and dispute records
+
+2.4 Business Partner Data
+- Partner identifiers and contact details
+- Service integration and operational data
+- Compliance and support-related information
+
+--------------------------------------------------
+3. PURPOSE OF DATA USE
+--------------------------------------------------
+Data is used strictly within the Mirchi35 platform to:
+- Enable discovery, orders, and transactions
+- Provide customer, vendor, and partner support
+- Improve platform security and performance
+- Generate analytics and insights for value-based services
+- Enhance user experience and service optimization
+
+Mirchi35 does not sell or license personal or business data.
+
+--------------------------------------------------
+4. DATA SHARING & DISCLOSURE
+--------------------------------------------------
+
+4.1 Internal Platform Sharing
+Limited data may be shared between users, vendors, and business partners solely to enable platform services.
+
+4.2 Business Partners
+Data may be shared with verified business partners who:
+- Are contractually bound by confidentiality and data protection obligations
+- Use data only to provide services to Mirchi35
+- Are prohibited from selling or misusing data
+
+4.3 Legal Requirements
+Data may be disclosed if required by law or government authorities.
+
+--------------------------------------------------
+5. CYBERSECURITY & DATA PROTECTION
+--------------------------------------------------
+Mirchi35 implements:
+- Encrypted data transmission
+- Secure access controls
+- Continuous monitoring and audits
+
+Despite best efforts, no system is completely secure. Mirchi35 is not liable for breaches caused by force majeure, advanced cyber attacks, or user negligence.
+
+--------------------------------------------------
+6. DATA RETENTION
+--------------------------------------------------
+Data is retained only as long as necessary for operations, compliance, or dispute resolution, after which it may be anonymized or deleted.
+
+--------------------------------------------------
+7. DATA LOCALIZATION POLICY
+--------------------------------------------------
+All personal data, transactional data, vendor data, and business partner data collected by Mirchi35 are stored and processed on cloud data centers operating within the geographical jurisdiction of the Republic of India.
+
+Mirchi35 does not transfer or store such data outside Indian territory, except where expressly permitted or required under applicable Indian law.
+
+--------------------------------------------------
+8. RIGHTS OF USERS, VENDORS & PARTNERS
+--------------------------------------------------
+You have the right to:
+- Access and correct your data
+- Withdraw consent for optional processing
+- Request deletion subject to legal obligations
+
+--------------------------------------------------
+9. GRIEVANCE REDRESSAL OFFICER
+--------------------------------------------------
+In accordance with applicable Indian data protection laws, Mirchi35 has appointed a Grievance Officer for data privacy-related concerns.
+
+Name: Gopinath TN  
+Designation: Head – Technology / Cloud Services  
+Email ID: support@Mirchi35.com  
+Subject Line to be used: "Grievance related to Mirchi 35 Data Privacy"
+
+Mirchi35 shall acknowledge and address grievances within timelines prescribed under applicable law.
+
+--------------------------------------------------
+10. COOKIES & ANALYTICS
+--------------------------------------------------
+Mirchi35 may use cookies or similar technologies to improve platform functionality and analytics.
+
+--------------------------------------------------
+11. CHILDREN’S PRIVACY
+--------------------------------------------------
+Mirchi35 does not knowingly collect data from individuals under 18 years of age.
+
+--------------------------------------------------
+12. POLICY UPDATES
+--------------------------------------------------
+This Privacy Policy may be updated periodically. Continued use of the platform constitutes acceptance of the updated policy.
+
+--------------------------------------------------
+13. CONTACT & JURISDICTION
+--------------------------------------------------
+General Contact Email: support@Mirchi35.com  
+Jurisdiction: Bangalore, Karnataka, India

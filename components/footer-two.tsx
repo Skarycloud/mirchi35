@@ -3,60 +3,27 @@ import Link from 'next/link'
 
 const links = [
     {
-        group: 'Product',
+        group: 'Navigation',
         items: [
             {
                 title: 'Features',
-                href: '#',
+                href: '#features',
             },
             {
-                title: 'Solution',
-                href: '#',
-            },
-            {
-                title: 'Customers',
-                href: '#',
+                title: 'How It Works',
+                href: '#how-it-works',
             },
             {
                 title: 'Pricing',
-                href: '#',
+                href: '#pricing',
             },
             {
-                title: 'Help',
-                href: '#',
-            },
-            {
-                title: 'About',
-                href: '#',
-            },
-        ],
-    },
-    {
-        group: 'Company',
-        items: [
-            {
-                title: 'About',
-                href: '#',
-            },
-            {
-                title: 'Careers',
-                href: '#',
-            },
-            {
-                title: 'Blog',
-                href: '#',
-            },
-            {
-                title: 'Press',
-                href: '#',
+                title: 'FAQs',
+                href: '#faqs',
             },
             {
                 title: 'Contact',
-                href: '#',
-            },
-            {
-                title: 'Help',
-                href: '#',
+                href: '/contact',
             },
         ],
     },
@@ -64,20 +31,12 @@ const links = [
         group: 'Legal',
         items: [
             {
-                title: 'Licence',
-                href: '#',
+                title: 'User Agreement',
+                href: '/user-agreement',
             },
             {
-                title: 'Privacy',
-                href: '#',
-            },
-            {
-                title: 'Cookies',
-                href: '#',
-            },
-            {
-                title: 'Security',
-                href: '#',
+                title: 'Privacy Policy',
+                href: '/privacy-policy',
             },
         ],
     },
@@ -97,7 +56,7 @@ export default function FooterSection() {
                         </Link>
                     </div>
 
-                    <div className="col-span-3 grid grid-cols-3 gap-6">
+                    <div className="col-span-3 grid grid-cols-2 gap-6">
                         {links.map((link, index) => (
                             <div
                                 key={index}
@@ -116,7 +75,7 @@ export default function FooterSection() {
                     </div>
                 </div>
                 <div className="mt-12 flex flex-wrap items-end justify-between gap-6 border-t py-6">
-                    <span className="text-muted-foreground order-last block text-center text-sm md:order-first">© {new Date().getFullYear()} Tailark Mist, All rights reserved</span>
+                    <span className="text-muted-foreground order-last block text-center text-sm md:order-first">© {new Date().getFullYear()} Mirchi35 Private Limited, All rights reserved</span>
                     <div className="order-first flex flex-wrap justify-center gap-6 text-sm md:order-last">
                         <Link
                             href="#"

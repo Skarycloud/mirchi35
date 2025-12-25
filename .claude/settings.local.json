@@ -2,7 +2,13 @@
   "permissions": {
     "allow": [
       "Bash(npx shadcn:*)",
-      "Bash(move features-8.tsx why-mirchi.tsx)"
+      "Bash(move features-8.tsx why-mirchi.tsx)",
+      "Bash(npx docx-to-txt:*)",
+      "Bash(npx docx-parser:*)",
+      "Bash(powershell -Command \"Add-Type -AssemblyName System.IO.Compression.FileSystem; $zip = [System.IO.Compression.ZipFile]::OpenRead\\(''c:\\\\AADS\\(VISHNU\\)\\\\vishnu\\\\mirchi\\\\Mirchi35\\\\mirchi35\\\\public\\\\Below is the FINAL Eula document Mirchi35 \\(1\\).docx''\\); $entry = $zip.Entries | Where-Object {$_Name -eq ''document.xml''}; $stream = $entry.Open\\(\\); $reader = New-Object System.IO.StreamReader\\($stream\\); $content = $reader.ReadToEnd\\(\\); $reader.Close\\(\\); $stream.Close\\(\\); $zip.Dispose\\(\\); $content\")",
+      "Bash(npx:*)",
+      "Bash(pnpm run build)",
+      "Bash(ls:*)"
     ]
   }
 }

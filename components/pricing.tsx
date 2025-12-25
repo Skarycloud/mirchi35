@@ -23,7 +23,8 @@ export default function Pricing() {
         },
         {
             name: 'Local Boost',
-            price: '499',
+            price: '65',
+            period: 'day',
             bestFor: 'Increasing local reach',
             features: [
                 'Everything in Free',
@@ -39,7 +40,8 @@ export default function Pricing() {
         },
         {
             name: 'Neighborhood Pro',
-            price: '999',
+            price: '118',
+            period: 'day',
             bestFor: 'High footfall businesses',
             features: [
                 'Everything in Local Boost',
@@ -55,7 +57,7 @@ export default function Pricing() {
     ]
 
     return (
-        <section className="py-16 md:py-32">
+        <section id="pricing" className="py-16 md:py-32">
             <div className="mx-auto max-w-6xl px-6">
                 {/* Section Header */}
                 <div className="mx-auto max-w-2xl space-y-4 text-center">
@@ -83,7 +85,7 @@ export default function Pricing() {
                                 <CardTitle className="text-xl font-semibold">{plan.name}</CardTitle>
                                 <div className="mt-3">
                                     <span className="text-3xl font-bold">₹{plan.price}</span>
-                                    <span className="text-muted-foreground"> / month</span>
+                                    <span className="text-muted-foreground"> / {plan.period || 'month'}</span>
                                 </div>
                                 <CardDescription className="mt-2 text-sm">
                                     Best for: {plan.bestFor}
