@@ -26,14 +26,16 @@ export default function HeroSection() {
         <>
             <HeroHeader />
             <main className="overflow-hidden">
-                <section className="bg-linear-to-b to-muted from-background rounded-b-[40px]">
+                <section className="bg-linear-to-b to-muted from-background">
                     <div className="relative py-36">
                         <div className="relative z-10 mx-auto w-full max-w-5xl px-6 grid md:grid-cols-2 gap-12 items-center">
                             <div>
                                 {/* Animated Badge */}
-                                <div className="shimmer-border inline-flex items-center gap-2 px-4 py-2 mb-6 rounded-full bg-zinc-50 dark:bg-zinc-900">
-                                    <span className="text-sm text-muted-foreground">India&apos;s First Live Discovery Platform</span>
-                                    <ArrowUpRight className="w-4 h-4 text-muted-foreground" />
+                                <div className="flex justify-center md:justify-start">
+                                    <div className="shimmer-border inline-flex items-center gap-2 px-4 py-2 mb-6 rounded-full bg-zinc-50 dark:bg-zinc-900">
+                                        <span className="text-sm text-muted-foreground">India&apos;s First Live Discovery Platform</span>
+                                        <ArrowUpRight className="w-4 h-4 text-muted-foreground" />
+                                    </div>
                                 </div>
                                 
                                 {/* Title */}
@@ -104,7 +106,7 @@ export default function HeroSection() {
                                     </div>
 
                                     {/* Live Deals Card - Top Left */}
-                                    <div className="absolute -top-12 -left-28 w-50 p-4 rounded-2xl bg-linear-to-br from-blue-500 to-blue-600 shadow-xl skew-x-6 animate-in slide-in-from-top-4 duration-700">
+                                    <div className="absolute -top-12 -left-6 md:-left-28 w-50 p-4 rounded-2xl bg-linear-to-br from-blue-500 to-blue-600 shadow-xl skew-x-6 animate-in slide-in-from-top-4 duration-700">
                                         {/* Hyper Discovery Radar Illustration */}
                                         <div className="flex items-center gap-3 mb-3">
                                             <div className="relative w-10 h-10">
@@ -128,7 +130,7 @@ export default function HeroSection() {
                                     </div>
 
                                     {/* Floating Map Card */}
-                                    <div className="absolute -bottom-8 -right-24 w-45 h-32.5 overflow-hidden rounded-2xl border border-border bg-background shadow-xl skew-x-6 animate-in slide-in-from-bottom-4 duration-700">
+                                    <div className="absolute -bottom-8 -right-6 md:-right-24 w-45 h-32.5 overflow-hidden rounded-2xl border border-border bg-background shadow-xl skew-x-6 animate-in slide-in-from-bottom-4 duration-700">
                                         <Image
                                             src="/assets/Map.png"
                                             alt="Map"
