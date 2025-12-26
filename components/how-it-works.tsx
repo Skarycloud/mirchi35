@@ -7,7 +7,7 @@ import { type ChartConfig, ChartContainer, ChartTooltip, ChartTooltipContent } f
 
 export default function FeaturesSection() {
     return (
-        <section className="px-4 py-16 md:py-32">
+        <section id="how-it-works" className="px-4 py-16 md:py-32">
             <div className="mx-auto max-w-5xl">
                 <div className="text-center mb-12">
                     <h2 className="text-4xl md:text-5xl font-bold mb-4">How <span style={{ color: '#DB0917' }}>Mirchi35</span> works in real time</h2>

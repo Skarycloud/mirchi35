@@ -7,9 +7,11 @@ import { cn } from '@/lib/utils'
 import { useTheme } from "next-themes"
 
 const menuItems = [
-    { name: 'Features', href: '#link' },
-    { name: 'Pricing', href: '#link' },
-    { name: 'About', href: '#link' },
+    { name: 'Features', href: '#features' },
+    { name: 'How It Works', href: '#how-it-works' },
+    { name: 'Pricing', href: '#pricing' },
+    { name: 'FAQs', href: '#faqs' },
+    { name: 'Contact', href: '/contact' },
 ]
 
 export const HeroHeader = () => {
