@@ -20,7 +20,7 @@ export default function ForVendors() {
                             </Card>
                             <div className="sm:max-w-sm">
                                 <h3 className="text-foreground text-xl font-semibold">Post updates in seconds</h3>
-                                <p className="text-muted-foreground my-4 text-lg">Vendors can share what's available right now fresh food, new stock, or daily specials with just a few taps.</p>
+                                <p className="text-muted-foreground my-4 text-lg">Vendors can share what&apos;s available right now fresh food, new stock, or daily specials with just a few taps.</p>
                             </div>
                         </div>
                         <div className="space-y-4">
@@ -44,7 +44,7 @@ export default function ForVendors() {
                             </Card>
                             <div className="sm:max-w-sm">
                                 <h3 className="text-foreground text-xl font-semibold">No commissions. No pressure.</h3>
-                                <p className="text-muted-foreground my-4 text-lg">Mirchi35 doesn't control pricing, delivery, or inventory. Stay independent and visible on their own terms.</p>
+                                <p className="text-muted-foreground my-4 text-lg">Mirchi35 doesn&apos;t control pricing, delivery, or inventory. Stay independent and visible on their own terms.</p>
                             </div>
                         </div>
                     </div>

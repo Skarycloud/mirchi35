@@ -22,7 +22,7 @@ export default function Foundation() {
                             <Radio className="size-4" />
                             <h3 className="text-sm font-medium">Live Updates</h3>
                         </div>
-                        <p className="text-sm text-muted-foreground">Vendors post ads in real-time. If it's on Mirchi35, it's happening right now.</p>
+                        <p className="text-sm text-muted-foreground">Vendors post ads in real-time. If it&apos;s on Mirchi35, it&apos;s happening right now.</p>
                     </div>
                     <div className="space-y-2">
                         <div className="flex items-center gap-2">
@@ -36,7 +36,7 @@ export default function Foundation() {
                             <Tag className="size-4" />
                             <h3 className="text-sm font-medium">Exclusive Deals</h3>
                         </div>
-                        <p className="text-sm text-muted-foreground">Discover exclusive flash sales and offers you won't find anywhere else.</p>
+                        <p className="text-sm text-muted-foreground">Discover exclusive flash sales and offers you won&apos;t find anywhere else.</p>
                     </div>
                     <div className="space-y-2">
                         <div className="flex items-center gap-2">

@@ -36,7 +36,7 @@ export default function PrivacyPolicyContent() {
             </div>
 
             <p>
-              Mirchi35 Private Limited ("Mirchi35", "we", "our", "us") respects your privacy and is committed to protecting personal, transactional, vendor, and business partner data shared on the Mirchi35 platform.
+              Mirchi35 Private Limited (&quot;Mirchi35&quot;, &quot;we&quot;, &quot;our&quot;, &quot;us&quot;) respects your privacy and is committed to protecting personal, transactional, vendor, and business partner data shared on the Mirchi35 platform.
             </p>
 
             <hr className="my-8 border-border" />
@@ -190,7 +190,7 @@ export default function PrivacyPolicyContent() {
                 <p className="font-semibold text-foreground">Name: Gopinath TN</p>
                 <p className="font-semibold text-foreground">Designation: Head – Technology / Cloud Services</p>
                 <p className="font-semibold text-foreground">Email ID: gopinath.tn@mirchi35.com</p>
-                <p className="font-semibold text-foreground">Subject Line to be used: "Grievance related to Mirchi 35 Data Privacy"</p>
+                <p className="font-semibold text-foreground">Subject Line to be used: &quot;Grievance related to Mirchi 35 Data Privacy&quot;</p>
               </div>
               <p className="mt-4">
                 Mirchi35 shall acknowledge and address grievances within timelines prescribed under applicable law.
@@ -209,7 +209,7 @@ export default function PrivacyPolicyContent() {
             <hr className="my-8 border-border" />
 
             <section>
-              <h2 className="text-2xl font-bold mb-4 text-foreground">11. CHILDREN'S PRIVACY</h2>
+              <h2 className="text-2xl font-bold mb-4 text-foreground">11. CHILDREN&apos;S PRIVACY</h2>
               <p>
                 Mirchi35 does not knowingly collect data from individuals under 18 years of age.
               </p>

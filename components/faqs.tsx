@@ -40,7 +40,7 @@ export default function FAQs() {
                         <h2 className="text-foreground text-4xl font-semibold">Frequently Asked Questions</h2>
                         <p className="text-muted-foreground mt-4 text-balance text-lg">Your questions answered</p>
                         <p className="text-muted-foreground mt-6 hidden md:block">
-                            Can't find what you're looking for? Contact our{' '}
+                            Can&apos;t find what you&apos;re looking for? Contact our{' '}
                             <Link
                                 href="#"
                                 className="text-primary font-medium hover:underline">
@@ -67,7 +67,7 @@ export default function FAQs() {
                     </div>
 
                     <p className="text-muted-foreground mt-6 md:hidden">
-                        Can't find what you're looking for? Contact our{' '}
+                        Can&apos;t find what you&apos;re looking for? Contact our{' '}
                         <Link
                             href="#"
                             className="text-primary font-medium hover:underline">

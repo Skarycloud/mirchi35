@@ -9,7 +9,8 @@
       "Bash(npx:*)",
       "Bash(pnpm run build)",
       "Bash(ls:*)",
-      "WebFetch(domain:www.reworkd.ai)"
+      "WebFetch(domain:www.reworkd.ai)",
+      "Bash(pnpm run lint:*)"
     ]
   }
 }

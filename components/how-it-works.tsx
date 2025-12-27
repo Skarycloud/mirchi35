@@ -1,5 +1,4 @@
 'use client'
-import { Logo } from '@/components/logo'
 import { Activity, Map as MapIcon, MessageCircle, Wifi, Store } from 'lucide-react'
 import DottedMap from 'dotted-map'
 import { Area, AreaChart, CartesianGrid } from 'recharts'
@@ -11,14 +10,14 @@ export default function FeaturesSection() {
             <div className="mx-auto max-w-5xl">
                 <div className="text-center mb-12">
                     <h2 className="text-4xl md:text-5xl font-bold mb-4">How <span style={{ color: '#DB0917' }}>Mirchi35</span> works in real time</h2>
-                    <p className="text-lg text-muted-foreground max-w-3xl mx-auto">Built to surface what's happening nearby reliably and continuously.</p>
+                    <p className="text-lg text-muted-foreground max-w-3xl mx-auto">Built to surface what&apos;s happening nearby reliably and continuously.</p>
                 </div>
                 <div className="grid border md:grid-cols-2">
                 <div>
                     <div className="p-6 sm:p-12">
                         <span className="text-muted-foreground flex items-center gap-2">
                             <MapIcon className="size-4" />
-                            See what's active around you
+                            See what&apos;s active around you
                         </span>
 
                         <p className="mt-8 text-2xl font-semibold">Mirchi35 shows what nearby vendors have live, in your neighborhood.</p>
@@ -83,7 +82,7 @@ export default function FeaturesSection() {
                         </span>
 
                         <p className="my-8 text-2xl font-semibold">
-                            See local activity in real-time. <span className="text-muted-foreground"> Instantly surface what’s relevant nearby.</span>
+                            See local activity in real-time. <span className="text-muted-foreground"> Instantly surface what&apos;s relevant nearby.</span>
                         </p>
                     </div>
                     <MonitoringChart />

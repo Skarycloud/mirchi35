@@ -28,7 +28,7 @@ export default function HeroSection() {
     <>
       <HeroHeader />
       <main className="overflow-hidden">
-        <section className="bg-[#FDF2E7] dark:bg-transparent rounded-b-[20px]">
+        <section className="bg-[#FDF2E7] dark:bg-transparent rounded-b-4xl">
           <div className="relative py-36">
             <div className="relative z-10 mx-auto w-full max-w-5xl px-6 grid md:grid-cols-2 gap-12 items-center">
               <div>
@@ -55,7 +55,7 @@ export default function HeroSection() {
                   Nearby.
                 </h1>
                 <p className="text-muted-foreground my-8 max-w-2xl text-balance text-xl">
-                  The only hyper-local app with LIVE vendor ads. See what's
+                  The only hyper-local app with LIVE vendor ads. See what&apos;s
                   cooking, selling, and happening near you.
                 </p>
 

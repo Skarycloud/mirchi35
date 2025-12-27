@@ -50,14 +50,14 @@ export default function UserAgreementContent() {
               </p>
 
               <p className="mb-6">
-                This End User License Agreement ("Agreement") governs access to
-                and use of the Mirchi35 App ("App"), operated by Mirchi35.com
-                ("Mirchi35", "we", "us").
+                This End User License Agreement (&quot;Agreement&quot;) governs access to
+                and use of the Mirchi35 App (&quot;App&quot;), operated by Mirchi35.com
+                (&quot;Mirchi35&quot;, &quot;we&quot;, &quot;us&quot;).
               </p>
 
               <p className="mb-6 font-semibold text-foreground">
-                By downloading, registering, or using the App, you ("Vendor",
-                "you") agree to be legally bound by this Agreement.
+                By downloading, registering, or using the App, you (&quot;Vendor&quot;,
+                &quot;you&quot;) agree to be legally bound by this Agreement.
               </p>
             </section>
 
@@ -172,7 +172,7 @@ export default function UserAgreementContent() {
               </ul>
               <p className="mt-4 font-semibold text-foreground">
                 Any illness, injury, dissatisfaction, loss, or damage suffered
-                by customers arising from the Vendor's products or services
+                by customers arising from the Vendor&apos;s products or services
                 shall be the exclusive responsibility of the Vendor.
               </p>
             </section>
@@ -384,7 +384,7 @@ export default function UserAgreementContent() {
                 16. Acceptance
               </h3>
               <p>
-                By clicking "I Agree", the Vendor confirms legal authority to
+                By clicking &quot;I Agree&quot;, the Vendor confirms legal authority to
                 bind the business and acceptance of this Agreement.
               </p>
             </section>
@@ -408,7 +408,7 @@ export default function UserAgreementContent() {
               </p>
 
               <p className="mb-6 font-semibold text-foreground">
-                This Food Safety Compliance Addendum ("Addendum") forms an
+                This Food Safety Compliance Addendum (&quot;Addendum&quot;) forms an
                 integral part of the Mirchi35 Vendor App EULA.
               </p>
             </section>
