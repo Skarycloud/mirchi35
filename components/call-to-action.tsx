@@ -1,6 +1,7 @@
 import { Button } from '@/components/ui/button'
 import { Calendar, ChevronRight } from 'lucide-react'
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function StatsSection() {
     return (
@@ -11,26 +12,50 @@ export default function StatsSection() {
                         <span className="text-muted-foreground">Make your neighborhood visible.</span> Get discovered in real time.
                     </h2>
                     <p className="mt-4 text-lg">Mirchi35 helps local businesses share what’s available right now and helps nearby people discover it, without delivery pressure or discounts.</p>
-                    <div className="mt-8 flex gap-3">
-                        <Button
-                            asChild
-                            className="pr-2">
-                            <Link href="#">
-                                Go Live
-                                <ChevronRight
-                                    strokeWidth={2.5}
-                                    className="size-3.5! opacity-50"
-                                />
-                            </Link>
-                        </Button>
-                        <Button
-                            asChild
-                            variant="outline"
-                            className="pl-2.5">
-                            <Link href="#">
-                                List Your Business
-                            </Link>
-                        </Button>
+                    <div className="mt-8 flex items-center gap-2 sm:gap-4">
+                        {/* Google Play Button */}
+                        <Link
+                            href="#playstore"
+                            className="flex items-center gap-2 sm:gap-3 px-3 sm:px-5 py-2 sm:py-3 bg-black rounded-lg border border-zinc-700 hover:bg-zinc-900 transition-colors"
+                        >
+                            <Image
+                                src="/playstore.svg"
+                                alt="Google Play"
+                                width={20}
+                                height={20}
+                                className="w-5 h-5 sm:w-6 sm:h-6"
+                            />
+                            <div className="flex flex-col">
+                                <span className="text-white/80 text-[9px] sm:text-[10px] uppercase tracking-wide">
+                                    Get it on
+                                </span>
+                                <span className="text-white font-semibold text-xs sm:text-sm -mt-0.5">
+                                    Google Play
+                                </span>
+                            </div>
+                        </Link>
+
+                        {/* App Store Button */}
+                        <Link
+                            href="#appstore"
+                            className="flex items-center gap-2 sm:gap-3 px-3 sm:px-5 py-2 sm:py-3 bg-black rounded-lg border border-zinc-700 hover:bg-zinc-900 transition-colors"
+                        >
+                            <Image
+                                src="/apple.svg"
+                                alt="App Store"
+                                width={20}
+                                height={20}
+                                className="w-5 h-5 sm:w-6 sm:h-6"
+                            />
+                            <div className="flex flex-col">
+                                <span className="text-white/80 text-[9px] sm:text-[10px]">
+                                    Download on the
+                                </span>
+                                <span className="text-white font-semibold text-xs sm:text-sm -mt-0.5">
+                                    App Store
+                                </span>
+                            </div>
+                        </Link>
                     </div>
                 </div>
             </div>

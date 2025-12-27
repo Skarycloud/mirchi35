@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card'
 import { Check } from 'lucide-react'
@@ -111,7 +112,7 @@ export default function Pricing() {
                                 <Button
                                     asChild
                                     variant={plan.variant}
-                                    className={`w-full ${plan.popular ? 'bg-orange-500 hover:bg-orange-600 text-white border-0' : ''}`}>
+                                    className="w-full bg-[#ff6900] hover:bg-[#ff6900]/90 text-white font-semibold border-0">
                                     <Link href="">{plan.cta}</Link>
                                 </Button>
                             </CardFooter>

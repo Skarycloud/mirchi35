@@ -28,7 +28,7 @@ export default function HeroSection() {
     <>
       <HeroHeader />
       <main className="overflow-hidden">
-        <section className="bg-linear-to-b to-muted from-background">
+        <section className="bg-[#FDF2E7] dark:bg-transparent rounded-b-[20px]">
           <div className="relative py-36">
             <div className="relative z-10 mx-auto w-full max-w-5xl px-6 grid md:grid-cols-2 gap-12 items-center">
               <div>
@@ -55,7 +55,7 @@ export default function HeroSection() {
                   Nearby.
                 </h1>
                 <p className="text-muted-foreground my-8 max-w-2xl text-balance text-xl">
-                  The only hyper-local app with LIVE vendor ads. See what’s
+                  The only hyper-local app with LIVE vendor ads. See what's
                   cooking, selling, and happening near you.
                 </p>
 
@@ -107,7 +107,7 @@ export default function HeroSection() {
               </div>
 
               <div className="flex justify-center mt-12 md:mt-0">
-                <div className="relative h-137.5 w-[320px]">
+                <div className="relative h-110 w-64">
                   {/* Back Shadow Card */}
                   <div className="absolute inset-0 translate-y-4 -translate-x-4 rounded-3xl border border-zinc-200 bg-zinc-100 dark:bg-zinc-800 dark:border-zinc-700 skew-x-6 shadow-sm" />
 
@@ -117,17 +117,17 @@ export default function HeroSection() {
                       key={currentImageIndex}
                       src={carouselImages[currentImageIndex]}
                       alt="app screen"
-                      width={320}
-                      height={550}
+                      width={256}
+                      height={440}
                       className="h-full w-full object-cover object-top-left animate-in fade-in duration-500"
                     />
                   </div>
 
                   {/* Live Deals Card - Top Left */}
-                  <div className="absolute -top-12 -left-6 md:-left-28 w-50 p-4 rounded-2xl bg-linear-to-br from-blue-500 to-blue-600 shadow-xl skew-x-6 animate-in slide-in-from-top-4 duration-700">
+                  <div className="absolute -top-10 -left-6 md:-left-24 w-44 p-3 rounded-2xl bg-linear-to-br from-blue-500 to-blue-600 shadow-xl skew-x-6 animate-in slide-in-from-top-4 duration-700">
                     {/* Hyper Discovery Radar Illustration */}
-                    <div className="flex items-center gap-3 mb-3">
-                      <div className="relative w-10 h-10">
+                    <div className="flex items-center gap-2 mb-2">
+                      <div className="relative w-8 h-8">
                         {/* Radar rings */}
                         <div
                           className="absolute inset-0 rounded-full border border-white/20 animate-ping"
@@ -140,35 +140,35 @@ export default function HeroSection() {
                         <div className="absolute inset-2 rounded-full border border-white/40" />
                         {/* Center dot */}
                         <div className="absolute inset-0 flex items-center justify-center">
-                          <div className="w-3 h-3 rounded-full bg-white shadow-lg shadow-white/50" />
+                          <div className="w-2.5 h-2.5 rounded-full bg-white shadow-lg shadow-white/50" />
                         </div>
                         {/* Discovery points */}
-                        <div className="absolute top-1 right-0 w-1.5 h-1.5 rounded-full bg-yellow-300 animate-pulse" />
+                        <div className="absolute top-0.5 right-0 w-1 h-1 rounded-full bg-yellow-300 animate-pulse" />
                         <div
-                          className="absolute bottom-2 left-0 w-1.5 h-1.5 rounded-full bg-green-300 animate-pulse"
+                          className="absolute bottom-1.5 left-0 w-1 h-1 rounded-full bg-green-300 animate-pulse"
                           style={{ animationDelay: "0.5s" }}
                         />
                       </div>
-                      <span className="text-white/90 text-[10px] font-medium uppercase tracking-wider">
+                      <span className="text-white/90 text-[9px] font-medium uppercase tracking-wider">
                         Live
                       </span>
                     </div>
 
-                    <p className="text-white text-xs font-semibold mb-1">
+                    <p className="text-white text-[11px] font-semibold mb-0.5">
                       Check what&apos;s hot around you
                     </p>
-                    <p className="text-white/80 text-[10px] leading-tight">
+                    <p className="text-white/80 text-[9px] leading-tight">
                       Live deals happening near you right now
                     </p>
                   </div>
 
                   {/* Floating Map Card */}
-                  <div className="absolute -bottom-8 -right-6 md:-right-24 w-45 h-32.5 overflow-hidden rounded-2xl border border-border bg-background shadow-xl skew-x-6 animate-in slide-in-from-bottom-4 duration-700">
+                  <div className="absolute -bottom-8 -right-6 md:-right-20 w-36 h-26 overflow-hidden rounded-2xl border border-border bg-background shadow-xl skew-x-6 animate-in slide-in-from-bottom-4 duration-700">
                     <Image
                       src="/assets/Map.png"
                       alt="Map"
-                      width={180}
-                      height={130}
+                      width={144}
+                      height={104}
                       className="h-full w-full object-cover"
                     />
                   </div>

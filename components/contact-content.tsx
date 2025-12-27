@@ -145,7 +145,7 @@ export default function ContactContent() {
               Join thousands of local businesses already using Mirchi35 to reach nearby customers.
             </p>
             <div className="flex gap-4 justify-center mt-6">
-              <Button asChild size="lg" className="bg-orange-500 hover:bg-orange-600 text-white border-0">
+              <Button asChild size="lg" className="bg-[#ff6900] hover:bg-[#ff6900]/90 text-white font-semibold border-0">
                 <Link href="/">Get Started Free</Link>
               </Button>
               <Button asChild variant="outline" size="lg">

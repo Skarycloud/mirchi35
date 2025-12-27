@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import { Logo } from '@/components/logo'
 import { Menu, X, Sun, Moon } from 'lucide-react'
 import { Button } from '@/components/ui/button'
@@ -93,36 +94,26 @@ export const HeroHeader = () => {
                                     ))}
                                 </ul>
                             </div>
-                            <div className="flex w-full flex-col space-y-3 sm:flex-row sm:gap-3 sm:space-y-0 md:w-fit">
-                                <Button
-                                    asChild
-                                    variant="ghost"
-                                    size="sm"
-                                    className={cn(isScrolled && 'lg:hidden')}>
-                                    <Link href="#">
-                                        <span>Login</span>
-                                    </Link>
-                                </Button>
-                                <Button
-                                    asChild
-                                    size="sm"
-                                    className={cn(isScrolled && 'lg:hidden')}>
-                                    <Link href="#">
-                                        <span>Sign Up</span>
-                                    </Link>
-                                </Button>
-                                <Button
-                                    asChild
-                                    size="sm"
-                                    className={cn(isScrolled ? 'lg:inline-flex' : 'hidden')}>
-                                    <Link href="#">
-                                        <span>Get Started</span>
-                                    </Link>
-                                </Button>
-                                
+                            <div className="flex w-full flex-col space-y-3 sm:flex-row sm:gap-3 sm:space-y-0 md:w-fit items-center sm:items-start">
+                                <Link
+                                    href="#playstore"
+                                    className="flex items-center gap-2 px-4 py-2 bg-black rounded-lg border border-zinc-700 hover:bg-zinc-900 transition-colors w-fit"
+                                >
+                                    <Image
+                                        src="/playstore.svg"
+                                        alt="Google Play"
+                                        width={20}
+                                        height={20}
+                                        className="w-5 h-5"
+                                    />
+                                    <span className="text-white font-semibold text-sm">
+                                        Install App
+                                    </span>
+                                </Link>
+
                                 <div className="hidden lg:flex items-center gap-3 pl-3 border-l border-border ml-3">
-                                   <button 
-                                        className='cursor-pointer pt-2 hover:text-primary transition-colors' 
+                                   <button
+                                        className='cursor-pointer pt-2 hover:text-primary transition-colors'
                                         onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
                                         aria-label="Toggle theme"
                                     >

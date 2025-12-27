@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 
 export default function ContentSection() {
     return (
@@ -41,6 +42,52 @@ export default function ContentSection() {
                                 <span className="text-foreground font-semibold">Sell locally. Sell more.</span>
                             </li>
                         </ul>
+
+                        <div className="flex flex-row items-center gap-2 sm:gap-3 pt-6">
+                            {/* Google Play Business App Button */}
+                            <Link
+                                href="#playstore"
+                                className="flex items-center gap-2 px-3 py-2 bg-black rounded-lg border border-zinc-700 hover:bg-zinc-900 transition-colors"
+                            >
+                                <Image
+                                    src="/playstore.svg"
+                                    alt="Google Play"
+                                    width={20}
+                                    height={20}
+                                    className="w-5 h-5"
+                                />
+                                <div className="flex flex-col">
+                                    <span className="text-white/80 text-[9px] uppercase tracking-wide">
+                                        Install
+                                    </span>
+                                    <span className="text-white font-semibold text-xs -mt-0.5">
+                                        Business App
+                                    </span>
+                                </div>
+                            </Link>
+
+                            {/* App Store Business App Button */}
+                            <Link
+                                href="#appstore"
+                                className="flex items-center gap-2 px-3 py-2 bg-black rounded-lg border border-zinc-700 hover:bg-zinc-900 transition-colors"
+                            >
+                                <Image
+                                    src="/apple.svg"
+                                    alt="App Store"
+                                    width={20}
+                                    height={20}
+                                    className="w-5 h-5"
+                                />
+                                <div className="flex flex-col">
+                                    <span className="text-white/80 text-[9px]">
+                                        Install
+                                    </span>
+                                    <span className="text-white font-semibold text-xs -mt-0.5">
+                                        Business App
+                                    </span>
+                                </div>
+                            </Link>
+                        </div>
                     </div>
                 </div>
             </div>

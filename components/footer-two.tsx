@@ -47,7 +47,7 @@ export default function FooterSection() {
         <footer className="bg-background border-b pt-20">
             <div className="mx-auto max-w-5xl px-6">
                 <div className="grid gap-12 md:grid-cols-5">
-                    <div className="md:col-span-2">
+                    <div className="md:col-span-2 flex justify-center md:justify-start">
                         <Link
                             href="/"
                             aria-label="go home"
@@ -56,7 +56,7 @@ export default function FooterSection() {
                         </Link>
                     </div>
 
-                    <div className="col-span-3 grid grid-cols-2 gap-6">
+                    <div className="col-span-3 grid grid-cols-2 gap-6 mx-auto md:mx-0">
                         {links.map((link, index) => (
                             <div
                                 key={index}
@@ -74,9 +74,9 @@ export default function FooterSection() {
                         ))}
                     </div>
                 </div>
-                <div className="mt-12 flex flex-wrap items-end justify-between gap-6 border-t py-6">
-                    <span className="text-muted-foreground order-last block text-center text-sm md:order-first">© {new Date().getFullYear()} Mirchi35 Private Limited, All rights reserved</span>
-                    <div className="order-first flex flex-wrap justify-center gap-6 text-sm md:order-last">
+                <div className="mt-12 flex flex-col md:flex-row flex-wrap items-center justify-center md:justify-between gap-6 border-t py-6">
+                    <span className="text-muted-foreground block text-center text-sm md:text-left">© {new Date().getFullYear()} Mirchi35 Private Limited, All rights reserved</span>
+                    <div className="flex flex-wrap justify-center gap-6 text-sm">
                         <Link
                             href="#"
                             target="_blank"
