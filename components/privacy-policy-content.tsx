@@ -189,7 +189,7 @@ export default function PrivacyPolicyContent() {
               <div className="bg-muted p-4 rounded-lg">
                 <p className="font-semibold text-foreground">Name: Gopinath TN</p>
                 <p className="font-semibold text-foreground">Designation: Head – Technology / Cloud Services</p>
-                <p className="font-semibold text-foreground">Email ID: Gopinath.TN@Mirchi35.com</p>
+                <p className="font-semibold text-foreground">Email ID: gopinath.tn@mirchi35.com</p>
                 <p className="font-semibold text-foreground">Subject Line to be used: "Grievance related to Mirchi 35 Data Privacy"</p>
               </div>
               <p className="mt-4">
@@ -228,7 +228,7 @@ export default function PrivacyPolicyContent() {
 
             <section>
               <h2 className="text-2xl font-bold mb-4 text-foreground">13. CONTACT & JURISDICTION</h2>
-              <p className="font-semibold text-foreground">General Contact Email: support@Mirchi35.com</p>
+              <p className="font-semibold text-foreground">General Contact Email: support@mirchi35.com</p>
               <p className="font-semibold text-foreground">Jurisdiction: Bangalore, Karnataka, India</p>
             </section>
           </div>

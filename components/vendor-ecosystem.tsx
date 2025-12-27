@@ -43,7 +43,7 @@ export default function ContentSection() {
                             </li>
                         </ul>
 
-                        <div className="flex flex-row items-center gap-2 sm:gap-3 pt-6">
+                        <div className="flex flex-row justify-center sm:justify-start items-center gap-2 sm:gap-3 pt-6">
                             {/* Google Play Business App Button */}
                             <Link
                                 href="#playstore"

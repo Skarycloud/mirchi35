@@ -12,7 +12,7 @@ export default function StatsSection() {
                         <span className="text-muted-foreground">Make your neighborhood visible.</span> Get discovered in real time.
                     </h2>
                     <p className="mt-4 text-lg">Mirchi35 helps local businesses share what’s available right now and helps nearby people discover it, without delivery pressure or discounts.</p>
-                    <div className="mt-8 flex items-center gap-2 sm:gap-4">
+                    <div className="mt-8 flex justify-center sm:justify-start items-center gap-2 sm:gap-4">
                         {/* Google Play Button */}
                         <Link
                             href="#playstore"
