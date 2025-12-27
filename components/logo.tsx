@@ -6,18 +6,11 @@ export const Logo = ({ className }: { className?: string }) => {
     return (
         <div className={cn("flex items-center gap-2", className)}>
             <Image
-                src="/logo.svg"
-                alt="Logo"
-                width={32}
-                height={32}
-                className="h-8 w-auto"
-            />
-            <Image
-                src="/logo_name.svg"
-                alt="Tailark"
-                width={80}
-                height={20}
-                className="h-4 w-auto"
+                src="/Mirchi35-logo.png"
+                alt="Mirchi35"
+                width={180}
+                height={60}
+                className="h-12 w-auto"
             />
         </div>
     )
