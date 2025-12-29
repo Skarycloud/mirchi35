@@ -61,11 +61,13 @@ export default function LogoCloud() {
                             className="pointer-events-none absolute left-0 top-0 h-full w-20"
                             direction="left"
                             blurIntensity={1}
+                            blurLayers={2}
                         />
                         <ProgressiveBlur
                             className="pointer-events-none absolute right-0 top-0 h-full w-20"
                             direction="right"
                             blurIntensity={1}
+                            blurLayers={2}
                         />
                     </div>
                 </div>

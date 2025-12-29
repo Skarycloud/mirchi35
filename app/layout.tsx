@@ -1,17 +1,23 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Inter, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { Providers } from "./providers";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const inter = Inter({
+  variable: "--font-inter",
   subsets: ["latin"],
+  display: "swap",
 });
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
+
+// ... (keep metadata as is, I will skip it in replacement chunk if possible, but I need to be contiguous)
+// Actually, I can just replace the imports and definitions, and then the body class separately if I used multi_replace, but replace_file_content needs contiguous.
+// The file is small enough (100 lines) but I should avoid replacing unrelated metadata in the middle.
+// I will use multi_replace to target the top imports/defs and the bottom body tag.
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://mirchi35.com";
 
@@ -94,7 +100,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${inter.variable} ${geistMono.variable} font-sans antialiased overflow-x-hidden`}
       >
         <Providers>{children}</Providers>
       </body>
