@@ -139,7 +139,7 @@ export default function HeroSection() {
                     initial={{ opacity: 0, scale: 0.8 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ delay: 0.8, duration: 0.6 }}
-                    className="absolute top-0 -left-6 md:-left-20 z-30"
+                    className="absolute -top-12 md:top-0 -left-6 md:-left-20 z-30"
                   >
                     <div className="relative w-fit px-3 py-2.5 rounded-xl bg-gradient-to-br from-emerald-500 to-green-600 shadow-xl shadow-green-500/30">
                       <div className="flex items-center gap-2">
@@ -161,7 +161,7 @@ export default function HeroSection() {
                     initial={{ opacity: 0, scale: 0.8 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ delay: 1, duration: 0.6 }}
-                    className="absolute top-24 -left-4 md:-left-16 z-30"
+                    className="absolute top-12 md:top-24 -left-4 md:-left-16 z-30"
                   >
                     <div className="relative w-fit px-4 py-3 rounded-2xl bg-gradient-to-br from-red-300 via-red-500 to-red-600 shadow-xl shadow-red-500/30">
                       <div className="flex items-center gap-2">
@@ -185,7 +185,7 @@ export default function HeroSection() {
                     initial={{ opacity: 0, scale: 0.8 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ delay: 1.2, duration: 0.6 }}
-                    className="absolute top-40 -right-6 md:-right-16 z-30"
+                    className="absolute top-80 md:top-40 -right-6 md:-right-16 z-30"
                   >
                     <div className="relative w-32 h-24 overflow-visible">
                       <div className="w-full h-full overflow-hidden rounded-xl border border-border bg-background shadow-xl">
@@ -207,7 +207,7 @@ export default function HeroSection() {
                     initial={{ opacity: 0, scale: 0.8 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ delay: 1.4, duration: 0.6 }}
-                    className="absolute bottom-12 -right-4 md:-right-16 z-30"
+                    className="absolute -bottom-16 md:bottom-20 -right-4 md:-right-16 z-30"
                   >
                     <div className="relative w-fit px-3 py-2.5 rounded-xl bg-gradient-to-br from-purple-300 via-purple-500 to-purple-700 shadow-xl shadow-purple-500/30">
                       <div className="flex items-center gap-2">
@@ -226,7 +226,7 @@ export default function HeroSection() {
 
                   {/* SVG Connecting Lines with Dots - Like reference image */}
                   <svg
-                    className="absolute inset-0 z-20 pointer-events-none hidden md:block"
+                    className="absolute inset-0 z-20 pointer-events-none"
                     style={{ overflow: 'visible' }}
                   >
                     <defs>
@@ -244,77 +244,167 @@ export default function HeroSection() {
                       </linearGradient>
                     </defs>
 
-                    {/* Line 1: Green card to Red card */}
+                    {/* Line 1: Green card to Red card - MOBILE */}
                     <motion.path
-                      d="M -45 30 C -50 60, -55 80, -50 115"
+                      d="M 0 -5 C -5 20, -5 52, 0 85"
                       fill="none"
                       stroke="url(#line1)"
                       strokeWidth="2.5"
                       strokeLinecap="round"
+                      className="md:hidden"
                       initial={{ pathLength: 0 }}
                       animate={{ pathLength: 1 }}
                       transition={{ duration: 0.8, delay: 1.2, ease: "easeOut" }}
                     />
-                    {/* Dot at Green card */}
+                    {/* Dot at Green card - MOBILE */}
                     <motion.circle
-                      cx="-45" cy="30" r="5"
+                      cx="0" cy="-5" r="5"
                       fill="#10B981"
                       stroke="white"
                       strokeWidth="2"
+                      className="md:hidden"
                       initial={{ scale: 0 }}
                       animate={{ scale: 1 }}
                       transition={{ delay: 1.2, type: "spring" }}
                     />
-                    {/* Dot at Red card */}
+
+                    {/* Line 1: Green card to Red card - DESKTOP */}
+                    <motion.path
+                      d="M -45 10 C -50 40, -55 70, -50 115"
+                      fill="none"
+                      stroke="url(#line1)"
+                      strokeWidth="2.5"
+                      strokeLinecap="round"
+                      className="hidden md:block"
+                      initial={{ pathLength: 0 }}
+                      animate={{ pathLength: 1 }}
+                      transition={{ duration: 0.8, delay: 1.2, ease: "easeOut" }}
+                    />
+                    {/* Dot at Green card - DESKTOP */}
+                    <motion.circle
+                      cx="-45" cy="10" r="5"
+                      fill="#10B981"
+                      stroke="white"
+                      strokeWidth="2"
+                      className="hidden md:block"
+                      initial={{ scale: 0 }}
+                      animate={{ scale: 1 }}
+                      transition={{ delay: 1.2, type: "spring" }}
+                    />
+                    {/* Dot at Red card - MOBILE */}
+                    <motion.circle
+                      cx="0" cy="85" r="5"
+                      fill="#EF4444"
+                      stroke="white"
+                      strokeWidth="2"
+                      className="md:hidden"
+                      initial={{ scale: 0 }}
+                      animate={{ scale: 1 }}
+                      transition={{ delay: 1.5, type: "spring" }}
+                    />
+                    {/* Dot at Red card - DESKTOP */}
                     <motion.circle
                       cx="-50" cy="115" r="5"
                       fill="#EF4444"
                       stroke="white"
                       strokeWidth="2"
+                      className="hidden md:block"
                       initial={{ scale: 0 }}
                       animate={{ scale: 1 }}
                       transition={{ delay: 1.5, type: "spring" }}
                     />
 
-                    {/* Line 2: Red card to Blue card (Map) - curves over */}
+                    {/* Line 2: Red card to Blue card (Map) - MOBILE */}
+                    <motion.path
+                      d="M 0 85 C 50 145, 210 250, 340 340"
+                      fill="none"
+                      stroke="url(#line2)"
+                      strokeWidth="2.5"
+                      strokeLinecap="round"
+                      className="md:hidden"
+                      initial={{ pathLength: 0 }}
+                      animate={{ pathLength: 1 }}
+                      transition={{ duration: 1, delay: 1.8, ease: "easeOut" }}
+                    />
+                    {/* Dot at Map card - MOBILE */}
+                    <motion.circle
+                      cx="340" cy="340" r="5"
+                      fill="#3B82F6"
+                      stroke="white"
+                      strokeWidth="2"
+                      className="md:hidden"
+                      initial={{ scale: 0 }}
+                      animate={{ scale: 1 }}
+                      transition={{ delay: 2.3, type: "spring" }}
+                    />
+
+                    {/* Line 2: Red card to Blue card (Map) - DESKTOP */}
                     <motion.path
                       d="M -50 115 C 50 100, 200 120, 345 175"
                       fill="none"
                       stroke="url(#line2)"
                       strokeWidth="2.5"
                       strokeLinecap="round"
+                      className="hidden md:block"
                       initial={{ pathLength: 0 }}
                       animate={{ pathLength: 1 }}
                       transition={{ duration: 1, delay: 1.8, ease: "easeOut" }}
                     />
-                    {/* Dot at Map card */}
+                    {/* Dot at Map card - DESKTOP */}
                     <motion.circle
                       cx="345" cy="175" r="5"
                       fill="#3B82F6"
                       stroke="white"
                       strokeWidth="2"
+                      className="hidden md:block"
                       initial={{ scale: 0 }}
                       animate={{ scale: 1 }}
                       transition={{ delay: 2.3, type: "spring" }}
                     />
 
-                    {/* Line 3: Blue card (Map) to Purple card */}
+                    {/* Line 3: Blue card (Map) to Purple card - MOBILE */}
                     <motion.path
-                      d="M 345 175 C 345 250, 340 350, 335 410"
+                      d="M 340 340 C 338 400, 336 470, 335 520"
                       fill="none"
                       stroke="url(#line3)"
                       strokeWidth="2.5"
                       strokeLinecap="round"
+                      className="md:hidden"
                       initial={{ pathLength: 0 }}
                       animate={{ pathLength: 1 }}
                       transition={{ duration: 0.8, delay: 2.5, ease: "easeOut" }}
                     />
-                    {/* Dot at Purple card */}
+                    {/* Dot at Purple card - MOBILE */}
                     <motion.circle
-                      cx="335" cy="410" r="5"
+                      cx="335" cy="520" r="5"
                       fill="#8B5CF6"
                       stroke="white"
                       strokeWidth="2"
+                      className="md:hidden"
+                      initial={{ scale: 0 }}
+                      animate={{ scale: 1 }}
+                      transition={{ delay: 2.8, type: "spring" }}
+                    />
+
+                    {/* Line 3: Blue card (Map) to Purple card - DESKTOP */}
+                    <motion.path
+                      d="M 345 175 C 345 240, 340 330, 335 380"
+                      fill="none"
+                      stroke="url(#line3)"
+                      strokeWidth="2.5"
+                      strokeLinecap="round"
+                      className="hidden md:block"
+                      initial={{ pathLength: 0 }}
+                      animate={{ pathLength: 1 }}
+                      transition={{ duration: 0.8, delay: 2.5, ease: "easeOut" }}
+                    />
+                    {/* Dot at Purple card - DESKTOP */}
+                    <motion.circle
+                      cx="335" cy="380" r="5"
+                      fill="#8B5CF6"
+                      stroke="white"
+                      strokeWidth="2"
+                      className="hidden md:block"
                       initial={{ scale: 0 }}
                       animate={{ scale: 1 }}
                       transition={{ delay: 2.8, type: "spring" }}
