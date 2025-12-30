@@ -20,94 +20,12 @@ export default function ContactContent() {
       <HeroHeader />
 
       {/* Main Content */}
-      <main className="mx-auto max-w-5xl px-6 pt-32 pb-24 space-y-24">
-        {/* Company Information Section (The "Form") */}
-        <div className="bg-zinc-50 dark:bg-zinc-900 rounded-3xl p-8 md:p-12 border border-zinc-200 dark:border-zinc-800">
-          <div className="grid md:grid-cols-2 gap-12">
-            {/* Company Details */}
-            <div className="space-y-8">
-              <div className="flex items-center gap-3">
-                <div className="w-10 h-10 bg-[#DB0917] rounded-lg flex items-center justify-center">
-                  <Building2 className="w-5 h-5 text-white" />
-                </div>
-                <h2 className="text-2xl font-bold">Company Information</h2>
-              </div>
-
-              <div className="space-y-4">
-                <div className="bg-white dark:bg-black/20 p-4 rounded-xl border border-zinc-100 dark:border-zinc-800">
-                  <p className="text-sm text-muted-foreground mb-1">
-                    Company Name
-                  </p>
-                  <p className="font-semibold text-lg">
-                    Mirchi35 Private Limited
-                  </p>
-                </div>
-                <div className="bg-white dark:bg-black/20 p-4 rounded-xl border border-zinc-100 dark:border-zinc-800">
-                  <p className="text-sm text-muted-foreground mb-1">CIN</p>
-                  <p className="font-semibold text-lg">U47912KA2025PTC211865</p>
-                </div>
-                <div className="bg-white dark:bg-black/20 p-4 rounded-xl border border-zinc-100 dark:border-zinc-800">
-                  <p className="text-sm text-muted-foreground mb-1">
-                    Jurisdiction
-                  </p>
-                  <p className="font-semibold text-lg">
-                    Bangalore, Karnataka, India
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            {/* Customer Support */}
-            <div className="space-y-8">
-              <div className="flex items-center gap-3">
-                <div className="w-10 h-10 bg-[#DB0917] rounded-lg flex items-center justify-center">
-                  <ShieldCheck className="w-5 h-5 text-white" />
-                </div>
-                <h2 className="text-2xl font-bold">Customer Support</h2>
-              </div>
-
-              <p className="text-muted-foreground leading-relaxed">
-                Our customer care team is ready to assist you with any questions
-                about the Mirchi35 platform.
-              </p>
-
-              <div className="space-y-6">
-                <div className="border-l-4 border-[#DB0917] pl-6 py-2">
-                  <p className="text-sm font-semibold uppercase tracking-wide text-muted-foreground mb-2">
-                    For General Inquiries
-                  </p>
-                  <a
-                    href="mailto:customer.care@mirchi35.com"
-                    className="text-[#DB0917] hover:text-[#DB0917]/80 text-xl font-normal hover:underline"
-                  >
-                    customer.care@mirchi35.com
-                  </a>
-                </div>
-                <div className="border-l-4 border-zinc-400 dark:border-zinc-600 pl-6 py-2">
-                  <p className="text-sm font-semibold uppercase tracking-wide text-muted-foreground mb-2">
-                    For Privacy & Data Concerns
-                  </p>
-                  <a
-                    href="mailto:gopinath.tn@mirchi35.com"
-                    className="text-foreground hover:text-[#DB0917] text-xl font-normal hover:underline block mb-2 transition-colors"
-                  >
-                    gopinath.tn@mirchi35.com
-                  </a>
-                  <p className="text-sm text-muted-foreground italic">
-                    Subject: &quot;Grievance related to Mirchi 35 Data
-                    Privacy&quot;
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
+      <main className="mx-auto max-w-5xl px-6 pt-24 md:pt-32 pb-16 md:pb-24 space-y-12 md:space-y-24">
         {/* Contact Methods (Cards) */}
         <div className="grid md:grid-cols-3 gap-6">
           {/* Email Card */}
           <Card className="bg-zinc-50 dark:bg-zinc-900 border-zinc-200 dark:border-zinc-800 hover:shadow-lg transition-all group">
-            <CardContent className="p-8 text-center">
+            <CardContent className="p-6 md:p-8 text-center">
               <div className="w-14 h-14 bg-[#DB0917]/10 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform">
                 <Mail className="h-7 w-7 text-[#DB0917]" />
               </div>
@@ -123,18 +41,18 @@ export default function ContactContent() {
 
           {/* Phone Card */}
           <Card className="bg-zinc-50 dark:bg-zinc-900 border-zinc-200 dark:border-zinc-800 hover:shadow-lg transition-all group">
-            <CardContent className="p-8 text-center">
+            <CardContent className="p-6 md:p-8 text-center">
               <div className="w-14 h-14 bg-[#DB0917]/10 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform">
                 <Phone className="h-7 w-7 text-[#DB0917]" />
               </div>
-              <h3 className="font-bold text-xl mb-3">Call Us</h3>
+              <h3 className="font-bold text-xl mb-3">Contact Us</h3>
               <p className="text-muted-foreground font-medium">Coming Soon</p>
             </CardContent>
           </Card>
 
           {/* Location Card */}
           <Card className="bg-zinc-50 dark:bg-zinc-900 border-zinc-200 dark:border-zinc-800 hover:shadow-lg transition-all group">
-            <CardContent className="p-8 text-center">
+            <CardContent className="p-6 md:p-8 text-center">
               <div className="w-14 h-14 bg-[#DB0917]/10 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform">
                 <MapPin className="h-7 w-7 text-[#DB0917]" />
               </div>
@@ -148,6 +66,86 @@ export default function ContactContent() {
               </p>
             </CardContent>
           </Card>
+        </div>
+
+        {/* Company Information Section (The "Form") */}
+        <div className="bg-zinc-50 dark:bg-zinc-900 rounded-3xl p-6 md:p-12 border border-zinc-200 dark:border-zinc-800">
+          <div className="grid md:grid-cols-2 gap-8 md:gap-12">
+            <div className="space-y-6 md:space-y-8">
+              <div className="flex items-center gap-3">
+                <div className="w-8 h-8 md:w-10 md:h-10 bg-[#DB0917] rounded-lg flex items-center justify-center shrink-0">
+                  <Building2 className="w-4 h-4 md:w-5 md:h-5 text-white" />
+                </div>
+                <h2 className="text-xl md:text-2xl font-bold truncate">Company Information</h2>
+              </div>
+
+              <div className="space-y-4">
+                <div className="bg-white dark:bg-black/20 p-4 rounded-xl border border-zinc-100 dark:border-zinc-800">
+                  <p className="text-xs md:text-sm text-muted-foreground mb-1">
+                    Company Name
+                  </p>
+                  <p className="font-semibold text-base md:text-lg">
+                    Mirchi35 Private Limited
+                  </p>
+                </div>
+                <div className="bg-white dark:bg-black/20 p-4 rounded-xl border border-zinc-100 dark:border-zinc-800">
+                  <p className="text-xs md:text-sm text-muted-foreground mb-1">CIN</p>
+                  <p className="font-semibold text-base md:text-lg break-all">U47912KA2025PTC211865</p>
+                </div>
+                <div className="bg-white dark:bg-black/20 p-4 rounded-xl border border-zinc-100 dark:border-zinc-800">
+                  <p className="text-xs md:text-sm text-muted-foreground mb-1">
+                    Jurisdiction
+                  </p>
+                  <p className="font-semibold text-base md:text-lg">
+                    Bangalore, Karnataka, India
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="space-y-6 md:space-y-8">
+              <div className="flex items-center gap-3">
+                <div className="w-8 h-8 md:w-10 md:h-10 bg-[#DB0917] rounded-lg flex items-center justify-center shrink-0">
+                  <ShieldCheck className="w-4 h-4 md:w-5 md:h-5 text-white" />
+                </div>
+                <h2 className="text-xl md:text-2xl font-bold truncate">Customer Support</h2>
+              </div>
+
+              <p className="text-sm md:text-base text-muted-foreground leading-relaxed">
+                Our customer care team is ready to assist you with any questions
+                about the Mirchi35 platform.
+              </p>
+
+              <div className="space-y-6">
+                <div className="border-l-4 border-[#DB0917] pl-4 md:pl-6 py-2">
+                  <p className="text-[10px] md:text-sm font-semibold uppercase tracking-wide text-muted-foreground mb-1 md:mb-2">
+                    For General Inquiries
+                  </p>
+                  <a
+                    href="mailto:customer.care@mirchi35.com"
+                    className="text-[#DB0917] hover:text-[#DB0917]/80 text-base md:text-xl font-normal hover:underline break-all block"
+                  >
+                    customer.care@mirchi35.com
+                  </a>
+                </div>
+                <div className="border-l-4 border-zinc-400 dark:border-zinc-600 pl-4 md:pl-6 py-2">
+                  <p className="text-[10px] md:text-sm font-semibold uppercase tracking-wide text-muted-foreground mb-1 md:mb-2">
+                    For Privacy & Data Concerns
+                  </p>
+                  <a
+                    href="mailto:gopinath.tn@mirchi35.com"
+                    className="text-foreground hover:text-[#DB0917] text-base md:text-xl font-normal hover:underline block mb-1 md:mb-2 transition-colors break-all"
+                  >
+                    gopinath.tn@mirchi35.com
+                  </a>
+                  <p className="text-[10px] md:text-sm text-muted-foreground italic">
+                    Subject: &quot;Grievance related to Mirchi 35 Data
+                    Privacy&quot;
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
         {/* CTA Section */}

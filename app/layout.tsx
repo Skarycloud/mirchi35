@@ -24,7 +24,7 @@ const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://mirchi35.com";
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "Mirchi35 – India's First Live Discovery Platform",
+    default: "Mirchi35 | India's First Live Discovery Platform",
     template: "%s | Mirchi35",
   },
   description:
