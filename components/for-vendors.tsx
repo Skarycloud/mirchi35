@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function ForVendors() {
   return (
     <section>
-      <div className="bg-muted/50 py-24">
+      <div className="bg-white py-24 dark:bg-[#0a0a0a]">
         <div className="mx-auto max-w-5xl px-6">
           <div>
             <h2 className="text-foreground text-4xl font-semibold">

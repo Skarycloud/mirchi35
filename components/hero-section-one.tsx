@@ -32,54 +32,64 @@ export default function HeroSection() {
     <>
       <HeroHeader />
       <main className="overflow-hidden max-w-full w-full relative">
-        <section className="relative rounded-b-4xl overflow-hidden">
-          <HeroBackground />
-          <div className="relative py-36">
-            <div className="relative z-10 mx-auto w-full max-w-5xl px-6 grid md:grid-cols-2 gap-12 items-center">
-              <div>
-                {/* Animated Badge */}
-                <FadeIn delay={0.1} direction="down" className="flex justify-center md:justify-start">
-                  <div className="group relative inline-flex items-center gap-2 px-4 py-2 mb-6 rounded-full bg-white/20 backdrop-blur-md border border-white/30 shadow-sm ring-1 ring-black/5 transition-all hover:scale-105 duration-300">
-                    <span className="text-sm font-medium text-zinc-900 dark:text-zinc-100">
-                      India&apos;s First Live Discovery Platform
-                    </span>
-                    <ArrowUpRight className="w-4 h-4 text-zinc-800 dark:text-zinc-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
-                  </div>
+        <section className="relative overflow-hidden bg-[#fbe8d5] dark:bg-black" style={{ fontFamily: 'Inter, system-ui, sans-serif' }}>
+          <div className="relative py-20 md:py-32">
+            <div className="relative z-10 mx-auto w-full max-w-7xl px-6 grid md:grid-cols-2 gap-12 items-center">
+              <div className="order-1 md:order-2 pt-8 md:pt-0">
+                {/* Small label text - no pill, just plain text */}
+                <FadeIn delay={0.1} direction="down" className="mb-3">
+                  <p className="text-xs font-bold tracking-widest uppercase text-center md:text-left text-[#ff6b5a] dark:text-[#ffaea3]" style={{ fontFamily: 'Inter, system-ui, sans-serif', letterSpacing: '0.15em' }}>
+                    India&apos;s First Live Discovery Platform
+                  </p>
                 </FadeIn>
 
-                {/* Title */}
-                <div className="overflow-hidden">
+                {/* Title - large, bold, white */}
+                <div className="overflow-hidden mb-5">
                   <motion.h1 
                     initial={{ opacity: 0, y: 50 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1], delay: 0.2 }}
-                    className="max-w-lg text-balance text-4xl font-bold md:text-5xl text-zinc-950 dark:text-white"
+                    className="text-4xl md:text-5xl lg:text-6xl font-bold text-zinc-900 dark:text-white leading-tight text-center md:text-left"
+                    style={{ fontFamily: 'Inter, system-ui, sans-serif', fontWeight: 800 }}
                   >
                     Discover What&apos;s{" "}
-                    <span className="relative inline-block" style={{ color: "#D73535" }}>
-                       Hot & Real
-                      <motion.span
-                        initial={{ width: "0%" }}
-                        animate={{ width: "100%" }}
-                        transition={{ duration: 0.8, delay: 1, ease: "circOut" }}
-                        className="absolute left-0 right-0 bottom-1 h-1 rounded-full"
-                        style={{ backgroundColor: "#D73535" }}
-                      />
+                    <span className="relative inline-block text-[#ff4500] dark:text-[#ff4500]">
+                      Hot & Real
+                      <svg 
+                        className="absolute left-0 w-full overflow-visible" 
+                        style={{ bottom: '0px', height: '8px' }}
+                        viewBox="0 0 100 8" 
+                        preserveAspectRatio="none"
+                      >
+                        <motion.path
+                          initial={{ pathLength: 0 }}
+                          animate={{ pathLength: 1 }}
+                          transition={{ duration: 0.8, delay: 1, ease: "easeInOut" }}
+                          d="M 2 2 Q 50 6, 98 2"
+                          stroke="#ff4500"
+                          strokeWidth="3.5"
+                          fill="none"
+                          strokeLinecap="round"
+                        />
+                      </svg>
                     </span>{" "}
-                    Nearby.
+                    Nearby
                   </motion.h1>
                 </div>
                 
-                <FadeIn delay={0.4} className="text-zinc-800 dark:text-zinc-200 my-8 max-w-2xl text-balance text-xl font-medium">
-                  The only hyper-local app with LIVE vendor ads. See what&apos;s
-                  cooking, selling, and happening near you.
+                {/* Description - regular weight, white */}
+                <FadeIn delay={0.4} className="mb-7 max-w-2xl mx-auto md:mx-0">
+                  <p className="text-base md:text-lg text-zinc-700 dark:text-white leading-relaxed text-center md:text-left" style={{ fontFamily: 'Inter, system-ui, sans-serif', fontWeight: 400 }}>
+                    Mirchi35 is the premier live discovery app offering interactive experiences for finding nearby vendors, deals, and events in real-time.
+                  </p>
                 </FadeIn>
 
-                <FadeIn delay={0.6} className="flex justify-center md:justify-start items-center gap-2 sm:gap-4">
+                {/* App Store Buttons */}
+                <FadeIn delay={0.6} className="flex justify-center md:justify-start items-center gap-3">
                   {/* Google Play Button */}
                   <Link
                     href="#playstore"
-                    className="flex items-center gap-2 sm:gap-3 px-3 sm:px-5 py-2 sm:py-3 bg-black rounded-lg border border-zinc-700 hover:bg-zinc-900 transition-colors group"
+                    className="flex items-center gap-2 px-4 py-2.5 bg-white/40 hover:bg-white/60 dark:bg-white/10 dark:hover:bg-white/20 backdrop-blur-md rounded-lg border border-zinc-900/20 dark:border-white/20 transition-all shadow-lg hover:shadow-xl group"
                   >
                     <motion.div
                        whileHover={{ rotate: [0, -10, 10, -10, 0] }}
@@ -90,14 +100,14 @@ export default function HeroSection() {
                         alt="Google Play"
                         width={20}
                         height={20}
-                        className="w-5 h-5 sm:w-6 sm:h-6"
+                        className="w-5 h-5 dark:invert"
                       />
                     </motion.div>
                     <div className="flex flex-col">
-                      <span className="text-white/80 text-[9px] sm:text-[10px] uppercase tracking-wide">
+                      <span className="text-zinc-700 dark:text-white/70 text-[9px] uppercase tracking-wide">
                         Get it on
                       </span>
-                      <span className="text-white font-semibold text-xs sm:text-sm -mt-0.5">
+                      <span className="text-zinc-900 dark:text-white font-semibold text-xs -mt-0.5">
                         Google Play
                       </span>
                     </div>
@@ -106,25 +116,25 @@ export default function HeroSection() {
                   {/* App Store Button */}
                   <Link
                     href="#appstore"
-                    className="flex items-center gap-2 sm:gap-3 px-3 sm:px-5 py-2 sm:py-3 bg-black rounded-lg border border-zinc-700 hover:bg-zinc-900 transition-colors group"
+                    className="flex items-center gap-2 px-4 py-2.5 bg-white/40 hover:bg-white/60 dark:bg-white/10 dark:hover:bg-white/20 backdrop-blur-md rounded-lg border border-zinc-900/20 dark:border-white/20 transition-all shadow-lg hover:shadow-xl group"
                   >
                      <motion.div
                        whileHover={{ rotate: [0, 10, -10, 10, 0] }}
                        transition={{ duration: 0.5 }}
                     >
                       <Image
-                        src="/apple.svg"
+                        src="/apple-black.svg"
                         alt="App Store"
                         width={20}
                         height={20}
-                        className="w-5 h-5 sm:w-6 sm:h-6"
+                        className="w-5 h-5 dark:invert"
                       />
                     </motion.div>
                     <div className="flex flex-col">
-                      <span className="text-white/80 text-[9px] sm:text-[10px]">
+                      <span className="text-zinc-700 dark:text-white/70 text-[9px]">
                         Download on the
                       </span>
-                      <span className="text-white font-semibold text-xs sm:text-sm -mt-0.5">
+                      <span className="text-zinc-900 dark:text-white font-semibold text-xs -mt-0.5">
                         App Store
                       </span>
                     </div>
@@ -132,7 +142,7 @@ export default function HeroSection() {
                 </FadeIn>
               </div>
 
-              <div className="flex justify-center mt-12 md:mt-0">
+              <div className="flex justify-center mt-12 md:mt-0 order-2 md:order-1">
                 <div className="relative w-full max-w-sm mx-auto perspective-1000">
                   {/* Card 1: Vendor Posts Ad - Top Left */}
                   <motion.div
@@ -141,7 +151,7 @@ export default function HeroSection() {
                     transition={{ delay: 0.8, duration: 0.6 }}
                     className="absolute -top-12 md:top-0 -left-6 md:-left-20 z-30"
                   >
-                    <div className="relative w-fit px-3 py-2.5 rounded-xl bg-gradient-to-br from-emerald-500 to-green-600 shadow-xl shadow-green-500/30">
+                    <div className="relative w-fit px-3 py-2.5 rounded-xl bg-linear-to-br from-emerald-500 to-green-600 shadow-xl shadow-green-500/30">
                       <div className="flex items-center gap-2">
                         <div className="w-7 h-7 rounded-lg bg-white/20 flex items-center justify-center">
                           <svg className="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -163,7 +173,7 @@ export default function HeroSection() {
                     transition={{ delay: 1, duration: 0.6 }}
                     className="absolute top-12 md:top-24 -left-4 md:-left-16 z-30"
                   >
-                    <div className="relative w-fit px-4 py-3 rounded-2xl bg-gradient-to-br from-red-300 via-red-500 to-red-600 shadow-xl shadow-red-500/30">
+                    <div className="relative w-fit px-4 py-3 rounded-2xl bg-linear-to-br from-red-300 via-red-500 to-red-600 shadow-xl shadow-red-500/30">
                       <div className="flex items-center gap-2">
                         <div className="relative w-8 h-8">
                           <div className="absolute inset-0 rounded-full border border-white/20 animate-ping" style={{ animationDuration: "2s" }} />
@@ -209,7 +219,7 @@ export default function HeroSection() {
                     transition={{ delay: 1.4, duration: 0.6 }}
                     className="absolute -bottom-16 md:bottom-20 -right-4 md:-right-16 z-30"
                   >
-                    <div className="relative w-fit px-3 py-2.5 rounded-xl bg-gradient-to-br from-purple-300 via-purple-500 to-purple-700 shadow-xl shadow-purple-500/30">
+                    <div className="relative w-fit px-3 py-2.5 rounded-xl bg-linear-to-br from-purple-300 via-purple-500 to-purple-700 shadow-xl shadow-purple-500/30">
                       <div className="flex items-center gap-2">
                         <div className="relative w-7 h-7 rounded-lg bg-white/20 flex items-center justify-center">
                           <svg className="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -258,7 +268,7 @@ export default function HeroSection() {
                     />
                     {/* Dot at Green card - MOBILE */}
                     <motion.circle
-                      cx="0" cy="-5" r="5"
+                      cx="0" cy="-7" r="5"
                       fill="#10B981"
                       stroke="white"
                       strokeWidth="2"

@@ -4,7 +4,7 @@ import FadeIn from './anim/fade-in'
 
 export default function WhyMirchi() {
     return (
-        <section id="features" className="bg-gray-50 py-16 md:py-32 dark:bg-transparent">
+        <section id="features" className="bg-white py-16 md:py-32 dark:bg-transparent">
             <div className="mx-auto max-w-5xl px-6">
                 <FadeIn className="text-center mb-12" direction="down">
                     <h2 className="text-4xl md:text-5xl font-bold mb-4">Why Choose <span style={{ color: '#DB0917' }}>Mirchi35</span>?</h2>

@@ -107,7 +107,7 @@ export default function AboutPage() {
             </h2>
             <div className="space-y-4 text-lg text-muted-foreground">
               <p>
-                Local commerce in India isn&apos;t broken—local discovery is.
+                Local commerce in India isn&apos;t broken local discovery is.
               </p>
               <p>
                 People already trust kiranas, darshinis, street vendors, and
@@ -125,7 +125,7 @@ export default function AboutPage() {
             <div className="bg-linear-to-b aspect-video relative rounded-2xl from-zinc-300 to-transparent p-px dark:from-zinc-700">
               <div className="absolute inset-0 bg-muted/50 rounded-[15px] flex items-center justify-center">
                 <Image
-                  src="/assets/vendor-ecosystem.png"
+                  src="/assets/about-vendor.png"
                   className="rounded-[15px] shadow-lg object-cover"
                   alt="Vendor ecosystem"
                   fill
