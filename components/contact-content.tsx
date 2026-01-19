@@ -4,7 +4,6 @@ import {
   Mail,
   MapPin,
   Phone,
-  Send,
   Building2,
   ShieldCheck,
 } from "lucide-react";
@@ -46,7 +45,7 @@ export default function ContactContent() {
                 <Phone className="h-7 w-7 text-[#DB0917]" />
               </div>
               <h3 className="font-bold text-xl mb-3">Contact Us</h3>
-              <p className="text-muted-foreground font-medium">Coming Soon</p>
+              <p className="text-muted-foreground font-medium">+91 9986033010</p>
             </CardContent>
           </Card>
 
@@ -57,13 +56,13 @@ export default function ContactContent() {
                 <MapPin className="h-7 w-7 text-[#DB0917]" />
               </div>
               <h3 className="font-bold text-xl mb-3">Visit Us</h3>
-              <p className="text-muted-foreground font-medium leading-relaxed">
-                No. 220, 4th Main,
-                <br />
-                Chamarajpet,
-                <br />
-                Bangalore - 560018
-              </p>
+              <address className="not-italic text-muted-foreground text-sm leading-relaxed space-y-1">
+                <div className="font-medium">11, New Diagonal Rd,</div>
+                <div>Jaya Nagar 1st Block,</div>
+                <div>Jayanagar 3rd Block East,</div>
+                <div>Jayanagar, Bengaluru,</div>
+                <div className="font-medium pt-1">Karnataka 560011</div>
+              </address>
             </CardContent>
           </Card>
         </div>
