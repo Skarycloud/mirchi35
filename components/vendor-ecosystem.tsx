@@ -9,7 +9,7 @@ export default function ContentSection() {
                 <div className="grid gap-6 sm:grid-cols-2 md:gap-12 lg:gap-24">
                     <div className="relative mb-6 sm:mb-0">
                         <div className="bg-linear-to-b aspect-76/59 relative rounded-2xl from-zinc-300 to-transparent p-px dark:from-zinc-700">
-                            <Image src="/assets/vendor-ecosystem.png" className="rounded-[15px] shadow" alt="Vendor ecosystem" width={1207} height={929} />
+                            <Image src="/assets/vendor-ecosystem.webp" className="rounded-[15px] shadow" alt="Vendor ecosystem" width={1207} height={929} />
                         </div>
                     </div>
 

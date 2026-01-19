@@ -21,7 +21,7 @@ export default function ForVendors() {
               <Card className="aspect-video overflow-hidden p-2 bg-zinc-200/50 dark:bg-zinc-800/50">
                 <Card className="h-full translate-y-4 rounded-xl bg-white dark:bg-zinc-900 shadow-sm overflow-hidden relative">
                   <Image
-                    src="/assets/vendor-posting-update.png"
+                    src="/assets/vendor-posting-update.webp"
                     alt="Vendor posting update"
                     fill
                     className="object-cover scale-110"
@@ -42,7 +42,7 @@ export default function ForVendors() {
               <Card className="aspect-video overflow-hidden p-2 bg-zinc-200/50 dark:bg-zinc-800/50">
                 <Card className="h-full rounded-xl bg-white dark:bg-zinc-900 shadow-sm overflow-hidden relative">
                   <Image
-                    src="/assets/local-visibility.png"
+                    src="/assets/local-visibility.webp"
                     alt="Local visibility"
                     fill
                     className="object-cover scale-110"
@@ -63,7 +63,7 @@ export default function ForVendors() {
               <Card className="aspect-video overflow-hidden p-2 bg-zinc-200/50 dark:bg-zinc-800/50">
                 <Card className="h-full translate-x-4 translate-y-4 rounded-xl bg-white dark:bg-zinc-900 shadow-sm overflow-hidden relative">
                   <Image
-                    src="/assets/vendor-independence.png"
+                    src="/assets/vendor-independence.webp"
                     alt="Vendor independence"
                     fill
                     className="object-cover scale-110"

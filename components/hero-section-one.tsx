@@ -2,17 +2,15 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { HeroHeader } from "./header";
-import { ArrowUpRight } from "lucide-react";
 import Image from "next/image";
 import { motion, AnimatePresence } from "motion/react";
 import FadeIn from "./anim/fade-in";
-import { HeroBackground } from "./ui/hero-background";
 
 const carouselImages = [
-  "/assets/clothing.png",
-  "/assets/food.png",
-  "/assets/jewelry.png",
-  "/assets/restaurants.png",
+  "/assets/clothing.webp",
+  "/assets/food.webp",
+  "/assets/jewelry.webp",
+  "/assets/restaurants.webp",
 ];
 
 export default function HeroSection() {
@@ -201,7 +199,7 @@ export default function HeroSection() {
                       <div className="w-full h-full overflow-hidden rounded-xl border border-border bg-background shadow-xl">
                         <div className="relative h-full w-full">
                           <Image
-                            src="/assets/Map.png"
+                            src="/assets/Map.webp"
                             alt="Map"
                             width={128}
                             height={96}
@@ -452,7 +450,7 @@ export default function HeroSection() {
                         >
                             <div className="bg-background space-y-2 overflow-hidden rounded-[1.5rem] border border-black/5 dark:border-white/10 p-2 shadow-2xl dark:bg-zinc-900/50 dark:shadow-black dark:backdrop-blur-3xl">
                                 {/* The Image Content */}
-                                <div className="relative h-96 w-full rounded-[1rem] overflow-hidden bg-zinc-100 dark:bg-zinc-800">
+                                <div className="relative h-96 w-full rounded-3xl overflow-hidden bg-zinc-100 dark:bg-zinc-800">
                                    <AnimatePresence mode="wait">
                                      <motion.div
                                        key={currentImageIndex}

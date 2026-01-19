@@ -20,7 +20,7 @@ export default function FeaturesSection() {
                             <div className="grid items-center gap-6 sm:grid-cols-5">
                                 <Card
                                     className="p-2 sm:col-span-2 bg-muted/50 aspect-video overflow-hidden relative">
-                                    <Image src="/assets/vendor-posts-update.png" alt="Vendor posts update" fill className="object-cover rounded-lg scale-110" />
+                                    <Image src="/assets/vendor-posts-update.webp" alt="Vendor posts update" fill className="object-cover rounded-lg scale-110" />
                                 </Card>
                                 <div className="max-w-md sm:col-span-3">
                                     <h3 className="text-foreground text-lg font-semibold">Vendor posts what&apos;s available now</h3>
@@ -33,7 +33,7 @@ export default function FeaturesSection() {
                             <div className="grid items-center gap-6 sm:grid-cols-5">
                                 <Card
                                     className="p-2 sm:col-span-2 bg-muted/50 aspect-video overflow-hidden relative">
-                                    <Image src="/assets/nearby-customers-discover.png" alt="Nearby customers discover" fill className="object-cover rounded-lg scale-110" />
+                                    <Image src="/assets/nearby-customers-discover.webp" alt="Nearby customers discover" fill className="object-cover rounded-lg scale-110" />
                                 </Card>
                                 <div className="max-w-md sm:col-span-3">
                                     <h3 className="text-foreground text-lg font-semibold">Nearby customers discover it in real time</h3>
@@ -46,7 +46,7 @@ export default function FeaturesSection() {
                             <div className="grid items-center gap-6 sm:grid-cols-5">
                                 <Card
                                     className="p-2 sm:col-span-2 bg-muted/50 aspect-video overflow-hidden relative">
-                                    <Image src="/assets/walk-in-footfall.png" alt="Walk-in footfall" fill className="object-cover rounded-lg scale-110" />
+                                    <Image src="/assets/walk-in-footfall.webp" alt="Walk-in footfall" fill className="object-cover rounded-lg scale-110" />
                                 </Card>
                                 <div className="max-w-md sm:col-span-3">
                                     <h3 className="text-foreground text-lg font-semibold">More footfall, no extra work</h3>

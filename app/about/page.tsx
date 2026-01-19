@@ -125,7 +125,7 @@ export default function AboutPage() {
             <div className="bg-linear-to-b aspect-video relative rounded-2xl from-zinc-300 to-transparent p-px dark:from-zinc-700">
               <div className="absolute inset-0 bg-muted/50 rounded-[15px] flex items-center justify-center">
                 <Image
-                  src="/assets/about-vendor.png"
+                  src="/assets/about-vendor.webp"
                   className="rounded-[15px] shadow-lg object-cover"
                   alt="Vendor ecosystem"
                   fill
@@ -250,7 +250,7 @@ export default function AboutPage() {
                     {/* Radius */}
                     <div className="group bg-white dark:bg-black/40 rounded-2xl p-6 border border-zinc-200 dark:border-zinc-800 hover:shadow-lg transition-all">
                       <div className="relative mb-6">
-                        <div className="w-full aspect-square max-w-[120px] mx-auto relative">
+                        <div className="w-full aspect-square max-w-30 mx-auto relative">
                           <div className="absolute inset-0 border-4 border-zinc-200 dark:border-zinc-700 rounded-full opacity-30"></div>
                           <div className="absolute inset-[15%] border-4 border-zinc-300 dark:border-zinc-600 rounded-full opacity-50"></div>
                           <div className="absolute inset-[30%] border-4 border-zinc-400 dark:border-zinc-500 rounded-full opacity-70"></div>
@@ -268,7 +268,7 @@ export default function AboutPage() {
                     {/* Choices */}
                     <div className="group bg-white dark:bg-black/40 rounded-2xl p-6 border border-zinc-200 dark:border-zinc-800 hover:shadow-lg transition-all">
                       <div className="relative mb-6">
-                        <div className="w-full aspect-square max-w-[120px] mx-auto flex items-center justify-center">
+                        <div className="w-full aspect-square max-w-30 mx-auto flex items-center justify-center">
                           <div className="grid grid-cols-2 gap-2">
                             {[1, 2, 3, 4, 5].map((i) => (
                               <div
@@ -296,7 +296,7 @@ export default function AboutPage() {
                     {/* Substitutes */}
                     <div className="group bg-white dark:bg-black/40 rounded-2xl p-6 border border-zinc-200 dark:border-zinc-800 hover:shadow-lg transition-all">
                       <div className="relative mb-6">
-                        <div className="w-full aspect-square max-w-[120px] mx-auto relative flex flex-col items-center justify-center gap-2">
+                        <div className="w-full aspect-square max-w-30 mx-auto relative flex flex-col items-center justify-center gap-2">
                           {[1, 2, 3, 4, 5].map((i) => (
                             <div
                               key={i}
