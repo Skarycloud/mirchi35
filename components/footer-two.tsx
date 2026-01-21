@@ -42,6 +42,10 @@ const links = [
                 title: 'Privacy Policy',
                 href: '/privacy-policy',
             },
+            {
+                title: 'Delete Account',
+                href: '/delete-account',
+            },
         ],
     },
 ]
