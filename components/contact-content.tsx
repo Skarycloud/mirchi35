@@ -57,11 +57,20 @@ export default function ContactContent() {
               </div>
               <h3 className="font-bold text-xl mb-3">Visit Us</h3>
               <address className="not-italic text-muted-foreground text-sm leading-relaxed space-y-1">
-                <div className="font-medium">11, New Diagonal Rd,</div>
-                <div>Jaya Nagar 1st Block,</div>
+                <div className="font-medium">Mirchi35 Pvt Ltd.</div>
+                <div>2nd floor, Client of Emlen,</div>
+                <div>New Diagonal Rd,</div>
                 <div>Jayanagar 3rd Block East,</div>
-                <div>Jayanagar, Bengaluru,</div>
-                <div className="font-medium pt-1">Karnataka 560011</div>
+                <div>Bengaluru, Karnataka 560011</div>
+                <div className="text-xs italic pt-1">(Landmark: Above IndusInd bank)</div>
+                <a
+                  href="https://maps.app.goo.gl/PrvPAXXdSpc1shtP8"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block mt-2 text-[#DB0917] hover:underline font-medium"
+                >
+                  View on Maps
+                </a>
               </address>
             </CardContent>
           </Card>
