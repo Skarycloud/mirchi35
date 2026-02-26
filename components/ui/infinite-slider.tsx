@@ -1,7 +1,7 @@
 'use client';
 import { cn } from '@/lib/utils';
 import { useMotionValue, animate, motion } from 'motion/react';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, Children, cloneElement, isValidElement } from 'react';
 import useMeasure from 'react-use-measure';
 
 export type InfiniteSliderProps = {
@@ -105,7 +105,11 @@ export function InfiniteSlider({
         {...hoverProps}
       >
         {children}
-        {children}
+        {Children.map(children, (child, index) =>
+          isValidElement(child)
+            ? cloneElement(child, { key: `slider-dup-${index}` })
+            : child
+        )}
       </motion.div>
     </div>
   );

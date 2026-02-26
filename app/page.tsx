@@ -1,5 +1,6 @@
 import HeroSection from "@/components/hero-section-one";
-import LogoCloud from "@/components/logo-cloud";
+// import LogoCloud from "@/components/logo-cloud";
+import BannerCarousel from "@/components/banner-carousel";
 import WhyMirchi from "@/components/why-mirchi";
 import HowItWorks from "@/components/how-it-works";
 import Foundation from "@/components/foundation";
@@ -15,7 +16,8 @@ export default function Home() {
   return (
     <>
       <HeroSection />
-      <LogoCloud />
+      {/* <LogoCloud /> */}
+      <BannerCarousel />
       <WhyMirchi />
       <HowItWorks />
       <Foundation />
