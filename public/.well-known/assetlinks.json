@@ -1,0 +1,8 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.mirchi35.pulse",
+    "sha256_cert_fingerprints": ["10:79:4A:35:FC:4A:CB:66:DA:E1:67:D7:A8:85:8C:27:AB:2B:33:20:FE:7D:E2:0B:1C:8E:DC:DC:E9:61:D5:6C"]
+  }
+}]
