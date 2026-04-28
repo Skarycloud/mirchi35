@@ -1,0 +1,11 @@
+# Mirchi35 — Apache rules for Hostinger (LiteSpeed/Apache)
+# Serve assetlinks.json correctly (no trailing slash) for Android App Links
+RewriteEngine On
+
+# .well-known files must be served as-is, no trailing-slash redirect
+RewriteRule ^\.well-known/assetlinks\.json$ /.well-known/assetlinks.json [L]
+
+# Community share landing: /community/m/<handle> → /community/m/index.html
+# The client-side JS reads the handle from window.location.pathname.
+RewriteCond %{REQUEST_URI} ^/community/m/[^/]+/?$
+RewriteRule ^community/m/[^/]+/?$ /community/m/index.html [L]
